@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi | Nexus PDF Workspace</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { margin: 0 auto; max-width: 850px; padding: 32px 20px 64px; line-height: 1.65; }
+    h1, h2 { line-height: 1.25; }
+    nav { display: flex; gap: 16px; margin-bottom: 28px; }
+    section { padding-top: 12px; }
+    .muted { opacity: .72; }
+    hr { margin: 48px 0; border: 0; border-top: 1px solid currentColor; opacity: .2; }
+    a { color: #1672d4; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Pilihan bahasa">
+    <a href="#indonesia">Indonesia</a>
+    <a href="#english">English</a>
+  </nav>
+
+  <main>
+    <section id="indonesia" lang="id">
+      <h1>Kebijakan Privasi Nexus PDF Workspace</h1>
+      <p class="muted">Tanggal berlaku: 21 September 2026</p>
+      <p>Nexus PDF Workspace adalah aplikasi desktop untuk membaca dan mengolah
+      dokumen PDF. Kebijakan ini menjelaskan data yang aplikasi akses, kapan
+      data meninggalkan komputer Anda, dan pilihan yang tersedia bagi Anda.</p>
+
+      <h2>Dokumen dan pemrosesan lokal</h2>
+      <p>Aplikasi membaca dokumen yang Anda pilih dan menyimpan hasil ke lokasi
+      yang Anda tentukan. Operasi baca, edit, OCR lokal, konversi, pencetakan,
+      dan audit PDF berjalan pada komputer Anda. Aplikasi tidak mengunggah
+      dokumen untuk operasi tersebut.</p>
+      <p>Aplikasi menyimpan pengaturan, riwayat berkas, dan pemulihan sesi pada
+      profil Windows Anda. Anda dapat menghapus riwayat dari aplikasi. Setelah
+      mencopot aplikasi, data kompatibilitas lama yang masih ada dapat dihapus
+      dari folder <code>%APPDATA%\NexusPDFPro</code>.</p>
+
+      <h2>Telemetri opsional</h2>
+      <p>Telemetri nonaktif pada pemasangan baru. Jika Anda mengaktifkannya dari
+      menu Pengaturan, aplikasi mengirim data berikut ke Supabase melalui HTTPS:</p>
+      <ul>
+        <li>nama profil Windows lokal dan ID perangkat;</li>
+        <li>versi aplikasi, versi dan arsitektur Windows, serta kapasitas RAM;</li>
+        <li>status aktif, durasi pemakaian, dan waktu terakhir aktif.</li>
+      </ul>
+      <p>Data dipakai untuk mengukur penggunaan, mendiagnosis masalah rilis,
+      dan mengetahui versi yang masih digunakan. Supabase menyimpan setiap
+      instalasi dengan identitas anonim dan membatasi akses melalui Row Level
+      Security. Data disimpan sampai Anda meminta penghapusan atau layanan
+      telemetri dihentikan. Telemetri dapat dimatikan kembali dari Pengaturan;
+      setelah itu aplikasi menghentikan pengiriman berikutnya.</p>
+
+      <h2>Google Gemini</h2>
+      <p>Fitur AI memakai Google Gemini dan API key milik Anda. Aplikasi meminta
+      persetujuan sebelum mengirim teks, gambar halaman, atau bagian dokumen
+      yang Anda pilih ke Google. Tidak ada konten dokumen yang dikirim melalui
+      Gemini jika Anda menolak konfirmasi.</p>
+      <p>API key disimpan di Windows Credential Manager. Google memproses data
+      sesuai ketentuan dan kebijakan layanan Gemini yang terkait dengan API key
+      Anda. Hapus kredensial <code>NexusPDFPro / gemini_api_key</code> dari
+      Windows Credential Manager untuk menghapus key dari komputer.</p>
+
+      <h2>Keamanan dan pihak penerima</h2>
+      <p>Aplikasi memakai HTTPS untuk komunikasi dengan Supabase dan Google.
+      Supabase menerima telemetri setelah opt-in. Google menerima konten yang
+      Anda setujui untuk fitur Gemini. Kami tidak menjual data pribadi dan
+      tidak memakai jaringan iklan.</p>
+
+      <h2>Akses, penghapusan, dan kontak</h2>
+      <p>Kirim permintaan akses atau penghapusan telemetri dan pertanyaan
+      privasi ke <a href="mailto:salmanir55@outlook.com">salmanir55@outlook.com</a>.
+      Tim dukungan akan memberi petunjuk untuk menemukan informasi instalasi
+      yang diperlukan. Verifikasi tambahan dapat diminta untuk mencegah
+      penghapusan data milik orang lain.</p>
+    </section>
+
+    <hr>
+
+    <section id="english" lang="en">
+      <h1>Nexus PDF Workspace Privacy Policy</h1>
+      <p class="muted">Effective date: September 21, 2026</p>
+      <p>Nexus PDF Workspace is a desktop application for reading and processing
+      PDF documents. This policy describes the data the app accesses, when data
+      leaves your computer, and the choices available to you.</p>
+
+      <h2>Documents and local processing</h2>
+      <p>The app reads documents that you select and saves output to locations
+      that you choose. Reading, editing, local OCR, conversion, printing, and
+      PDF inspection run on your computer. The app does not upload documents
+      for those operations.</p>
+      <p>The app stores settings, file history, and session recovery data in
+      your Windows profile. You can clear history in the app. After uninstalling,
+      remaining legacy compatibility data can be removed from
+      <code>%APPDATA%\NexusPDFPro</code>.</p>
+
+      <h2>Optional telemetry</h2>
+      <p>Telemetry is off on a new installation. If you enable it in Settings,
+      the app sends the following data to Supabase over HTTPS:</p>
+      <ul>
+        <li>your local Windows profile name and a device identifier;</li>
+        <li>app version, Windows version and architecture, and installed RAM;</li>
+        <li>active status, accumulated usage time, and last-active time.</li>
+      </ul>
+      <p>We use this data to measure usage, diagnose release problems, and
+      identify app versions that remain in use. Supabase stores each installation
+      under an anonymous identity and restricts access with Row Level Security.
+      We retain the data until you request deletion or we discontinue the
+      telemetry service. You can turn telemetry off in Settings to stop future
+      transmissions.</p>
+
+      <h2>Google Gemini</h2>
+      <p>AI features use Google Gemini and your own API key. The app asks for
+      consent before sending selected text, page images, or document sections
+      to Google. No document content is sent through Gemini if you decline.</p>
+      <p>The API key is stored in Windows Credential Manager. Google processes
+      sent data under the Gemini terms and privacy policy associated with your
+      API key. Remove the <code>NexusPDFPro / gemini_api_key</code> credential
+      from Windows Credential Manager to delete the key from your computer.</p>
+
+      <h2>Security and recipients</h2>
+      <p>The app uses HTTPS for communication with Supabase and Google. Supabase
+      receives telemetry after opt-in. Google receives content that you approve
+      for Gemini features. We do not sell personal data or use advertising networks.</p>
+
+      <h2>Access, deletion, and contact</h2>
+      <p>Send telemetry access or deletion requests and privacy questions to
+      <a href="mailto:salmanir55@outlook.com">salmanir55@outlook.com</a>.
+      The support team will explain how to find the installation information
+      needed to locate the correct record. Additional verification may be
+      requested to prevent deletion of another person's data.</p>
+    </section>
+  </main>
+</body>
+</html>
