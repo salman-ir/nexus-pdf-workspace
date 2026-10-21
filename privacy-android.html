@@ -26,7 +26,8 @@
       <h1>Kebijakan Privasi Nexus PDF Mobile</h1>
       <p class="muted">Terakhir diperbarui: 21 Oktober 2026</p>
       <p>Nexus PDF Mobile memproses dokumen PDF di perangkat Anda. Aplikasi tidak memerlukan akun,
-      tidak menggunakan analitik atau iklan, dan tidak mengirim dokumen ke server pengembang.</p>
+      tidak memuat iklan, tidak memasang analitik milik pengembang, dan tidak mengirim dokumen ke
+      server mana pun.</p>
       <p>Dokumen yang Anda pilih dibaca melalui pemilih dokumen Android. Selama pemrosesan, aplikasi
       membuat salinan sementara dalam penyimpanan privat aplikasi. Hasil disimpan hanya ke lokasi
       yang Anda pilih. Aplikasi menghapus salinan sementara saat dokumen diganti atau aplikasi
@@ -38,15 +39,31 @@
       keperluan ini. Riwayat dapat dihapus kapan saja lewat tombol <strong>Hapus</strong> di beranda,
       atau satu per satu dengan menahan kartunya. Riwayat juga terhapus bila data aplikasi dihapus
       atau aplikasi dicopot.</p>
-      <p>Fitur <strong>Pindai</strong> memakai aplikasi kamera bawaan perangkat. Foto disimpan
-      sementara di cache aplikasi dan dihapus setelah PDF dibuat atau pindaian dibuang. Aplikasi ini
-      tidak meminta izin kamera sendiri. Tanda tangan yang Anda gambar hanya ditempelkan ke PDF hasil
+      <p>Fitur <strong>Pindai</strong> memakai pemindai dokumen Google (Google ML Kit Document
+      Scanner) melalui Google Play Services. Pemindai ini memotret, mendeteksi tepi, dan merapikan
+      halaman di perangkat; gambar dokumen tidak dikirim ke Google atau ke pengembang. Saat pertama
+      dipakai, Google Play Services dapat mengunduh modul pemindai. ML Kit dapat mengirim data
+      diagnostik dan statistik pemakaian ke Google, misalnya informasi perangkat dan aplikasi,
+      kinerja, serta pengenal perangkat. Isi dokumen tidak ikut dikirim. Pengiriman ini diatur oleh
+      Google sesuai <a href="https://developers.google.com/ml-kit/terms">ketentuan ML Kit</a> dan
+      <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a>. Pada perangkat
+      tanpa Google Play Services, Pindai memakai aplikasi kamera bawaan perangkat; aplikasi ini tidak
+      meminta izin kamera sendiri.</p>
+      <p>Teks pada hasil pindaian dan fitur <strong>Jadikan bisa dicari</strong> dibaca dengan Google
+      ML Kit Text Recognition. Modelnya ikut terpasang bersama aplikasi, jadi teks dibaca sepenuhnya di
+      perangkat tanpa internet; gambar dan teks dokumen tidak dikirim ke mana pun. Seperti pemindai,
+      pustaka ini dapat mengirim data diagnostik dan statistik pemakaian ke Google tanpa isi dokumen.
+      Teks yang terbaca hanya ditanam sebagai lapisan tak terlihat di PDF hasil.</p>
+      <p>Hasil pindaian disimpan sementara di cache aplikasi sampai Anda menyimpannya ke lokasi
+      pilihan Anda atau membuangnya. Pindaian yang belum disimpan tetap ada bila aplikasi tertutup
+      mendadak, supaya bisa dibuka lagi. Tanda tangan yang Anda gambar hanya ditempelkan ke PDF hasil
       dan tidak disimpan terpisah.</p>
       <p>Jika Anda memilih tombol <strong>Bagikan</strong> atau <strong>Cetak</strong>, Android akan
       menyerahkan dokumen kepada aplikasi atau layanan cetak yang Anda pilih. Penanganan dokumen oleh
       pihak tersebut mengikuti kebijakan privasinya masing-masing.</p>
-      <p>Aplikasi ini tidak meminta izin internet dan tidak mengumpulkan atau membagikan data pribadi.
-      Aplikasi ini tidak ditujukan khusus untuk anak-anak.</p>
+      <p>Izin internet hanya ada karena dibutuhkan pustaka Google ML Kit untuk keperluan di atas.
+      Pengembang sendiri tidak mengumpulkan, menerima, atau membagikan data pribadi. Aplikasi ini tidak
+      ditujukan khusus untuk anak-anak.</p>
       <p>Kebijakan ini dapat diperbarui bila perilaku aplikasi berubah. Tanggal di atas menunjukkan
       pembaruan terakhir.</p>
       <p>Pengembang: Itqan Labs. Untuk pertanyaan privasi, hubungi
@@ -59,7 +76,8 @@
       <h1>Nexus PDF Mobile Privacy Policy</h1>
       <p class="muted">Last updated: October 21, 2026</p>
       <p>Nexus PDF Mobile processes PDF documents on your device. The app does not require an account,
-      does not use analytics or advertising, and does not send documents to the developer's servers.</p>
+      contains no ads, includes no analytics of the developer's own, and does not send documents to any
+      server.</p>
       <p>Documents you choose are read through the Android document picker. During processing, the app
       creates temporary copies in the app's private storage. Results are saved only to the location you
       choose. The app deletes temporary copies when you switch documents or close the app normally. If
@@ -71,15 +89,30 @@
       content itself is not copied for this purpose. You can clear this history at any time with the
       <strong>Clear</strong> button on the home screen, or one item at a time by pressing and holding its
       card. The history is also removed when you clear the app's data or uninstall the app.</p>
-      <p>The <strong>Scan</strong> feature uses your device's built-in camera app. Photos are stored
-      temporarily in the app cache and deleted after the PDF is created or the scan is discarded. The app
-      does not request camera permission itself. Signatures you draw are only placed on the resulting PDF
-      and are not stored separately.</p>
+      <p>The <strong>Scan</strong> feature uses Google's document scanner (Google ML Kit Document
+      Scanner) through Google Play Services. The scanner takes the photos, detects the page edges, and
+      cleans up the pages on your device; document images are not sent to Google or to the developer. On
+      first use, Google Play Services may download the scanner module. ML Kit may send diagnostic and
+      usage data to Google, such as device and app information, performance metrics, and device
+      identifiers. The content of your documents is not sent. This is governed by Google under the
+      <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a> and the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. On devices without Google
+      Play Services, Scan uses your device's built-in camera app; the app does not request camera
+      permission itself.</p>
+      <p>Text in scans and the <strong>Make searchable</strong> feature is read with Google ML Kit Text
+      Recognition. Its model is installed with the app, so text is read entirely on your device without
+      internet; document images and text are not sent anywhere. Like the scanner, this library may send
+      diagnostic and usage data to Google, without document content. The recognized text is only
+      embedded as an invisible layer in the resulting PDF.</p>
+      <p>Scan results are kept temporarily in the app cache until you save them to a location you choose
+      or discard them. An unsaved scan is kept if the app closes unexpectedly, so it can be reopened.
+      Signatures you draw are only placed on the resulting PDF and are not stored separately.</p>
       <p>If you choose <strong>Share</strong> or <strong>Print</strong>, Android hands the document to the
       app or print service you select. That party handles the document according to its own privacy
       policy.</p>
-      <p>The app does not request internet permission and does not collect or share personal data. The
-      app is not directed at children.</p>
+      <p>The internet permission is present only because the Google ML Kit library needs it for the
+      purposes above. The developer does not collect, receive, or share personal data. The app is not
+      directed at children.</p>
       <p>This policy may be updated if the app's behavior changes. The date above shows the latest
       update.</p>
       <p>Developer: Itqan Labs. For privacy questions, contact
